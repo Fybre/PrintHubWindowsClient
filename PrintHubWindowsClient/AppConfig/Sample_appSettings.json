@@ -1,0 +1,43 @@
+{
+  "LogLevel": "information",
+  "JobRetrieverSettings": {
+    "FolderJobRetrieverSettings": [
+      {
+        "Name": "Input",
+        "SourceDirectory": "./Input",
+        "DestinationDirectory": "./Temp",
+        "PrintQueue": "Brother1",
+        "TimerInterval": 10000,
+        "FileFilter": "*.pdf"
+      }
+    ],
+    "Pop3JobRetrieverSettings": [
+      {
+        "Name": "Name",
+        "Pop3Server": "mail.there.forex",
+        "Pop3Port": 110,
+        "Username": "username",
+        "Password": "password",
+        "TimerInterval": 10000,
+        "SubjectFilter": "",
+        "SubjectQueueRegex": "",
+        "AttachmentTypeFilter": ".pdf",
+        "DestinationDirectory": "./Temp",
+        "DefaultOutputQueue": "Printer1",
+        "UseSSL": false,
+        "DeleteOnFiltered": false
+      }
+    ],
+    "SignalrJobRetrieverSettings": [
+      {
+        "Name": "craigdemo",
+        "PrintHub": "https://printhub.there.forex/PrintJobHub",
+        "PrintQueues": [],
+        "ThereforeTenant": "tenantname",
+        "ThereforeBaseUrl": "https://tenantname.thereforeonline.com",
+        "ThereforeAuth": "Basic XXXXXXXXXXXX",
+        "DestinationDirectory": "./Temp"
+      }
+    ]
+  }
+}
