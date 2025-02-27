@@ -1,4 +1,5 @@
 # PrintHubWindowsClient
+## Unless there is a pressing need to use the Printhub Signalr connection type, the better version to use is https://github.com/Fybre/PrintService
 Enables printing to a local printer from Therefore Online. Runs as a Windows Service. 
 It will print via PrintHub (signalr from cloud server), Email (pop3 mailbox) and/or local folder.
 
